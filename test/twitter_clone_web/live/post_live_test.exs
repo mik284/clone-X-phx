@@ -4,9 +4,9 @@ defmodule TwitterCloneWeb.PostLiveTest do
   import Phoenix.LiveViewTest
   import TwitterClone.TimelineFixtures
 
-  @create_attrs %{body: "some body", username: "some username", likes_count: 42, reposts_count: 42}
-  @update_attrs %{body: "some updated body", username: "some updated username", likes_count: 43, reposts_count: 43}
-  @invalid_attrs %{body: nil, username: nil, likes_count: nil, reposts_count: nil}
+  @create_attrs %{body: "some body"}
+  @update_attrs %{body: "some updated body"}
+  @invalid_attrs %{body: nil}
 
   defp create_post(_) do
     post = post_fixture()

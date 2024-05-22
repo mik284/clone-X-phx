@@ -7,7 +7,7 @@ import Config
 # Run `mix help test` for more information.
 config :twitter_clone, TwitterClone.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "password",
   hostname: "localhost",
   database: "twitter_clone_test#{System.get_env("MIX_TEST_PARTITION")}",
   pool: Ecto.Adapters.SQL.Sandbox,
