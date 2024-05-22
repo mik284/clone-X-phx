@@ -3,7 +3,7 @@ import Config
 # Configure your database
 config :twitter_clone, TwitterClone.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "password",
   hostname: "localhost",
   database: "twitter_clone_dev",
   stacktrace: true,
