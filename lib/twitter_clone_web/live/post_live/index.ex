@@ -6,7 +6,11 @@ defmodule TwitterCloneWeb.PostLive.Index do
 
   @impl true
   def mount(_params, _session, socket) do
-    {:ok, stream(socket, :posts, Timeline.list_posts())}
+    posts = Timeline.list_posts()
+    {:ok,
+     socket
+     |> assign(:posts, posts)
+     |> stream(:posts, posts)}
   end
 
   @impl true
